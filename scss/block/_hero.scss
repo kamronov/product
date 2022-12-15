@@ -1,0 +1,115 @@
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__info {
+    h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        color: $lightBlack;
+    }
+    p{
+        margin-top: 18px;
+        max-width: 458px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: $lightBlack;
+    }
+    span {
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 370px;
+        button {
+            padding: 14px 41px;
+            color: white;
+            background-color: $lightBlue;
+            border: none;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        a {
+            width: 50%;
+            position: relative;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: $lightBlue;
+            text-align: center;
+            text-decoration: underline;
+            &:before {
+                content: url(../../img/icon-video.png);
+                position: absolute;
+                left: 0;
+                top: 2px;
+            }
+        }
+    }
+}
+
+@media (max-width: 930px) {
+    .hero__info {
+        h2 {
+        font-size: 32px;
+        line-height: 45px;
+        }
+        p{
+        font-size: 15px;
+        line-height: 25px;
+        }
+        span {
+            margin-top: 35px;
+            button {
+            padding: 12px 32px;
+            font-size: 14px;
+            }
+            a {
+            font-size: 14px;
+            }
+        }
+    }
+    .hero__banner {
+        max-width: 450px;
+    }
+}
+@media (max-width: 760px) {
+    .hero__info {
+        h2 {
+        margin-top: 10px;
+        font-size: 36px;
+        line-height: 60px;
+        text-align: center;
+        }
+        p{
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        }
+        span {
+            margin: 0 auto;
+            margin-top: 20px;
+            button {
+            padding: 14px 41px;
+            font-size: 14px;
+            }
+            a {
+            font-size: 16px;
+            }
+        }
+    }
+    .hero__inner {
+        flex-direction: column-reverse;
+    }
+    .hero__banner {
+        margin-top: 28px;
+        max-width: 100%;
+    }
+   
+}
