@@ -1,0 +1,115 @@
+
+.table__title {
+    text-align: center;
+    h2 {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 51px;
+        color: $lightBlack;
+    }
+    p{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: $lightBlack;
+    }
+}
+
+.table__list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.table__item {
+    padding-bottom: 32px;
+    width: 322px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    transition: all ease 0.3s;
+    &:hover {
+        background-color: $lightBlue;
+        h2 {
+            color: white;
+        }
+        span {
+            color: white;
+        }
+        .dollar {
+            span {
+            color: white;
+            }
+           .dollar__block{
+            b {
+                color: white;
+            }
+            p {
+                color: #E0E0E0;
+            }
+           }
+        }
+        .table__btn {
+            background-color: #fff;
+            color: $lightBlue;
+        }
+    }
+    h2 {
+        margin-top: 24px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 40px;
+        color: $lightBlack;
+        text-align: center;
+    }
+    span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 40px;
+        color: $lightBlack;
+    }
+    .table__btn {
+        margin-top: 38px;
+        padding: 11px 18px;
+        border: none;
+        background-color: $lightBlue;
+        color: white;
+        border-radius: 8px;
+    }
+    .dollar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            font-weight: 700;
+            font-size: 76px;
+            line-height: 100px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: $lightBlue;
+        }
+         .dollar__block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 97px;
+             b {
+                text-align: left;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 30px;
+                color: $lightBlue;
+             }
+             p {
+                white-space: nowrap;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.1px;
+                color: #AFAFAF;
+             }
+         }
+    }
+}
