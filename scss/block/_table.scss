@@ -113,3 +113,13 @@
          }
     }
 }
+
+@media (max-width:950px) {
+    .table__list  {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .table__item {
+        margin-top: 20px;
+    }
+}

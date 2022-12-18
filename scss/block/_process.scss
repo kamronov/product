@@ -122,3 +122,50 @@
     border: none;
     font-weight: 700;
 }
+
+@media (max-width:840px) {
+    .process__title {
+        h2 {
+            font-size: 25px;
+        }
+        p {
+        font-size: 14px;
+        }
+    }
+    .process__up , .process__down{
+        img {
+            max-width: 78px;
+            max-height: 78px;
+        }
+        p{
+           font-size: 14px; 
+        }
+    }
+}
+
+@media (max-width:680px) {
+    .process__title {
+        h2 {
+            font-size: 32px;
+        }
+        p {
+        font-size: 16px;
+        margin-bottom: 39px;
+        }
+    }
+    .process__up , .process__down{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        img {
+            max-width: 88px;
+            max-height: 88px;
+        }
+        p{
+           font-size: 16px; 
+        }
+    }
+    .process__down {
+        flex-direction: column-reverse;
+    }
+}
