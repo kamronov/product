@@ -47,6 +47,13 @@ footer {
         border: none;
         cursor: pointer;
         border-radius: 4px;
+        transition: all ease 0.2s;
+        &:hover {
+            color: $lightBlack;
+            box-shadow: 3px 3px 6px $lightBlue;
+            background-color: initial;
+            border-radius: 4px;
+        }
     }
 }
 .footer__logo {

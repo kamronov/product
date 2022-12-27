@@ -55,6 +55,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
 }
 
 .clients__subtitle {
@@ -64,6 +69,7 @@
         line-height: 24px;
         letter-spacing: 0.2px;
         color: $lightBlue;
+        margin-bottom: 0;
     }
 
     h6 {
